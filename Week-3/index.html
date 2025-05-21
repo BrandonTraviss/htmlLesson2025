@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- CSS File rel = relative path start with ./ for root -->
+        <link rel="stylesheet" href="./css/style.css">
+        <meta name="description" content="This week we are looking at media and CSS">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <!-- Unicode Transformation Format 8-bit -->
+        <meta charset="UTF-8">
+        <title>Week 3 | Media & CSS</title>
+    </head>
+    <body>
+        <header>
+            <!-- Normally have a logo and navigation div used as logo container as there is no semantic element for logos -->
+             <div>
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="Logo">
+                </a>
+             </div>
+             <nav>
+                <menu>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                </menu>
+             </nav>
+        </header>
+                <!-- add our main element to contain our main content for this page  -->
+                 <main>
+                    <section class="lesson-masthead">
+                        <div class="">
+                            <h1>Working with Media & CSS</h1>
+                        </div>
+                    </section>
+                    <section id="images">
+                        <!-- our first example will be a plain image -->
+                         <h3>Plain Image</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus a recusandae, nisi est ea porro itaque unde odio beatae
+                            soluta sequi magni optio, alias dolores, vel libero totam animi? Repellendus eum doloremque sapiente ipsam alias, quisquam
+                            dolore nulla incidunt magnam, inventore totam, id blanditiis autem sint laborum exercitationem rerum. Nobis eius ipsa ad
+                            quae temporibus.</p>
+                        <img src="./img/image-1.jpg" alt="Image one">
+                        <!-- our next example will be a figure and figcaption -->
+                         <h3>Our image with a figcaption</h3>
+                        <figure>
+                            <img src="./img/image-2.jpg" alt="Image two">
+                            <figcaption>This is where the credit for the picture goes.</figcaption>
+                        </figure>
+                    </section>
+                    <section id="videos">
+                        <h3>Video with an iframe</h3>
+                        <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/eQEY1gPeZgk?si=aYNOIzoigx4e3FyZ" 
+                        title="YouTube video player" 
+                        allowfullscreen></iframe>
+                        <h3>HTML Video</h3>
+                        <video autoplay loop>
+                            <source src="./video/super-mario.mp4" type="video/mp4">
+                            Your browser does not support HTML Video
+                        </video>
+                    </section>
+                 </main>
+                 <footer>
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="Footer Logo">
+                    </a>
+                        <form method="post" action="somefile.php">
+                            <input type="text" placeholder="Name" name="name"><br>
+                            <input type="email" placeholder="Your Email" name="email"><br>
+                            <textarea placeholder="Message..."></textarea>
+                            <input type="submit" value="Send">
+                        </form>
+                 </footer>
+    </body>
+</html>
