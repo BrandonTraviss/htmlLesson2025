@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Order your pizza online">
+    <meta name="robots" content="noindex, no follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi's Pizza | Order Online</title>
+</head>
+<body>
+    <header>
+        <!-- Keep Logo in Div -->
+        <div class="logo-container">
+            <img class="logo" src="./img/LuigisPizza.png" alt="Luigis Pizza">
+        </div>
+        <!-- Nav menu -->
+        <nav>
+            <menu>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Apply Now</a></li>                
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <h1>Order Online</h1>
+        <!-- Section for order form -->
+        <section>
+            <form action="">
+                <!-- Get Delivery Details or Customer information -->
+                <fieldset class="flex col align-center">
+                    <h3>Delivery Details</h3>
+                    <div class="flex align-center text-left">
+                        <label class="w-60" for="name">Name</label><input class="mr-0-5" type="text" id="name" name="name">
+                        <label class="w-60" for="email">Email</label><input type="email" placeholder="JohnDoe@email.com" id="email" name="email">
+                    </div>
+                    <div class="flex align-center text-left mt-1">
+                        <label class="w-60" for="address">Address</label><input class="mr-0-5" type="text" name="address" id="address">
+                        <label class="w-60" for="telephone">Phone #</label><input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="xxx-xxx-xxxx">
+                    </div>
+                    <div class="mt-1 flex col align-center">
+                        <label class="flex gap-10" for="pickup">Pickup<input type="radio" name="type" id="pickup"></label>
+                        <label class="flex gap-10" for="delivery">Delivery<input type="radio" name="type" id="delivery"></label>
+                    </div>
+                    <div class="flex col align-center mt-1">
+                        <label for="instructions">Delivery Instructions</label>
+                        <textarea name="instructions" id="instructions"></textarea>
+                    </div>
+                </fieldset>
+                <!-- Determine the size and how you want the crust/sauce -->
+                <fieldset>
+                    <h3>Pizza Style</h3>
+                    <label for="size">Size</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="meium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xLarge">X-Large</option>
+                    </select>
+                    <label for="crust">Crust</label>
+                    <select name="crust" id="crust">
+                        <option value="original">Original</option>
+                        <option value="wholeWheat">Whole Wheat</option>
+                        <option value="gutenFree">Gluten Free</option>
+                    </select>                    
+                    <label for="sauce">Sauce</label>
+                    <select name="sauce" id="sauce">
+                        <option value="original">Original</option>
+                        <option value="marinara">Marinara</option>
+                        <option value="pesto">Pesto</option>
+                        <option value="bbq">Bbq</option>
+                    </select>
+                    <label for="cooked">Well Done?</label>  
+                    <select name="cooked" id="cooked">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>              
+                </fieldset>
+                <!-- Row with 2 Columns for toppings -->
+                 <div class="flex row">
+                    <fieldset class="toppings">
+                        <h3>Vegetables/Fruit</h3>
+                        <div class="flex space-around">
+                            <div>
+                                <label for="greenPeppers">Green Peppers<input type="checkbox" id="greenPeppers"  name="greenPeppers"></label>
+                                <label for="spinach">Spinach<input type="checkbox" id="spinach"  name="spinach"></label>
+                                <label for="onions">Onions<input type="checkbox" id="onions"  name="onions"></label>
+                                <label for="greenOlives">Green Olives<input type="checkbox" id="greenOlives"  name="greenOlives"></label>
+                                <label for="blackOlives">Black Olives<input type="checkbox" id="blackOlives"  name="blackOlives"></label>
+                                <label for="mushrooms">Mushrooms<input type="checkbox" id="mushrooms"  name="mushrooms"></label>
+                            </div>
+                            <div>
+                                <label for="redPeppers">Red Peppers<input type="checkbox" id="redPeppers"  name="redPeppers"></label>
+                                <label for="pineapple">Pineapple<input type="checkbox" id="pineapple"  name="pineapple"></label>
+                                <label for="redOnions">Red Onions<input type="checkbox" id="redOnions"  name="redOnions"></label>
+                                <label for="broccoli">Broccoli<input type="checkbox" id="broccoli"  name="broccoli"></label>
+                                <label for="zucchini">Zucchini<input type="checkbox" id="zucchini"  name="zucchini"></label>
+                                <label for="artichoke">Artichoke<input type="checkbox" id="artichoke"  name="artichoke"></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="toppings">
+                        <h3>Meat/Cheese</h3>
+                        <div class="flex space-around">
+                            <div>
+                                <label for="pepperoni">Pepperoni<input type="checkbox" id="pepperoni"  name="pepperoni"></label>
+                                <label for="ham">Ham<input type="checkbox" id="ham"  name="ham"></label>
+                                <label for="bacon">Bacon<input type="checkbox" id="bacon"  name="bacon"></label>
+                                <label for="sausage">Sausage<input type="checkbox" id="sausage"  name="sausage"></label>
+                                <label for="chicken">Chicken<input type="checkbox" id="chicken"  name="chicken"></label>
+                                <label for="groundBeef">Ground Beef<input type="checkbox" id="groundBeef"  name="groundBeef"></label>
+                            </div>
+                            <div>
+                                <label for="meatBalls">Meat Balls<input type="checkbox" id="meatBalls"  name="meatBalls"></label>
+                                <label for="steak">Steak<input type="checkbox" id="steak"  name="steak"></label>
+                                <label for="prosciutto">Prosciutto<input type="checkbox" id="prosciutto"  name="prosciutto"></label>
+                                <label for="italianSausage">Italian Sausage<input type="checkbox" id="italianSausage"  name="italianSausage"></label>
+                                <label for="extraCheese">Extra Cheese<input type="checkbox" id="extraCheese"  name="extraCheese"></label>
+                                <label for="fetaCheese">Feta Cheese<input type="checkbox" id="fetaCheese"  name="fetaCheese"></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                 </div>
+                 <!-- Add to order -->
+                 <fieldset>
+                    <h3>Add to order</h3>
+                    <button type="submit">Add to Order</button>
+                 </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- Simple footer -->
+    <footer>
+    <p>Luigi's Pizza Ltd.</p>
+    <p>&copy; 2025 Luigi's Pizza. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service
+    </footer>
+</body>
+</html>
