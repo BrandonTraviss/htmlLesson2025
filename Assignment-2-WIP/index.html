@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex,nofollow" >
+    <meta name="description" content="Pizza Ordering Form" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigis Pizza | Online Order</title>
+</head>
+<body>
+    <header>
+        <!-- Logo Goes here -->
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="./img/LuigisPizza.png" alt="Luigis Pizza Logo"></a>
+        </div>
+        <nav>
+            <menu>
+                <li><a href="">About us</a></li>
+                <li><a href="">Apply Now</a></li>
+                <li><a href="">Locations</a></li>
+                <li><a href="">Order Online</a></li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <h1>Order Online</h1>
+        <section>
+            <form action="" class="order-form">
+                <!-- collect contact information in this part of the form -->
+                <div class="contact">
+                    <h4 class="form-head">Contact Details</h4>
+                    <div>
+                        <label class="contact-label" for="name">Full Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label class="contact-label" for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <label class="contact-label" for="name">Phone</label>
+                        <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                    </div>
+                    <div>
+                        <label class="contact-label" for="number">Street Number</label>
+                        <input type="text" name="number">
+                    </div>
+                    <div>
+                        <label class="contact-label" for="streetName">Street Name</label>
+                        <input type="text" name="streetName">
+                    </div>                                        
+                </div>
+                <!-- user will design their pizza below -->
+                 <div class="pizza-settings">
+                    <div>
+                        <h4>Size</h4>
+                        <div>
+                            <label class="size-label" for="">Small</label>
+                            <input type="radio" name="pizzaSize" id="small">
+                        </div>
+                        <div>
+                            <label class="size-label" for="">Medium</label>
+                            <input type="radio" name="pizzaSize" id="medium">
+                        </div>
+                        <div>
+                            <label class="size-label" for="">Large</label>
+                            <input type="radio" name="pizzaSize" id="large">
+                        </div>
+                            <label class="size-label" for="">X-Large</label>
+                            <input type="radio" name="pizzaSize" id="xlarge">
+                        </div>
+
+                        <div>
+                            <h4>Crust</h4>
+                            <div>
+                                <label class="crust-label" for="">Normal</label>
+                                <input type="radio" name="crustType" id="normal">
+                            </div>
+                            <div>
+                                <label class="crust-label" for="">Whole Wheat</label>
+                                <input type="radio" name="crustType" id="wheat">
+                            </div>
+                            <div>
+                                <label class="crust-label" for="">Gluten Free</label>
+                                <input type="radio" name="crustType" id="gluten">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Sauce</h4>
+                        <select name="sauce" id="sauce">
+                            <option value="original">Original</option>
+                            <option value="marinara">Marinara</option>
+                            <option value="pesto">Pesto</option>
+                            <option value="bbq">Bbq Sauce</option>
+                        </select>
+                    </div>
+                 </div>
+                 </div>
+                 <div class="pizza-toppings">
+                    <div class="vegetables">
+                        <h4>Vegetables</h4>
+                        <div>
+                            <label for="gPepper">Green Peppers</label>
+                            <input type="checkbox" name="gPepper" id="gPepper">
+                            <label for="rPepper">Red Peppers</label>
+                            <input type="checkbox" name="rPepper" id="rPepper">
+                        </div>
+                    </div>
+                    <div class="meat">
+                        <h4>Meat</h4>
+                        <div class="topping-div">
+                            <label for="pep">Pepperoni</label>
+                            <input type="checkbox" name="pep" id="pep">
+                            <label for="ham">Ham</label>
+                            <input type="checkbox" name="ham" id="ham">
+                        </div>
+                    </div>                    
+                 </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Luigi's Pizza. All rights reserved. Unauthorized use or reproduction of content is prohibited.</p>
+    </footer>
+</body>
+</html>
