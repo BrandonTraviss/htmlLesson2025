@@ -1,0 +1,297 @@
+/* Custom Loaded Fonts */
+/* Did my absolute best to match the fonts used, learned how to use otf and ttf files */
+@font-face{
+    font-family:NimbusSans;
+    src: url('../font/NimbusSanL-Bol.otf') format("opentype");
+}
+@font-face{
+    font-family:Rating;
+    src: url('../font/Motion\ Picture\ Ratings.ttf') format("truetype");
+}
+@font-face{
+    font-family: RosaSans;
+    src: url('../font/RosaSans-Regular.ttf') format("truetype");
+}
+@font-face{
+    font-family: AnimalHouse;
+    src: url('../font/Animal\ House.otf') format("opentype");
+}
+@font-face{
+    font-family: CooperBlack;
+    src: url('../font/COOPBL.TTF') format("truetype");
+}
+@font-face{
+    font-family: Chelten;
+    src: url('../font/CheltenhamStdBoldCond.otf') format("opentype");
+}
+@font-face{
+    font-family: Banjoman;
+    src: url('../font/Banjoman-Regular.ttf') format("truetype");
+}
+.nimbus-sans{
+    font-family:"NimbusSans";
+}
+.ratingfont{
+    font-family: "Rating";
+}
+.banjoman{
+    font-family: "Banjoman";
+    font-size: 16px;
+}
+.rosasans{
+    font-family:"RosaSans";
+}
+.cooper{
+    font-family: "CooperBlack";
+    font-weight: 900;
+}
+.animal{
+    font-family: "AnimalHouse";
+}
+.animal-house{
+    font-family: "AnimalHouse";
+    font-size: 58px;
+    color: #B44027;
+    text-shadow: 1px 2.5px 0px black;
+}
+/* Google Fonts */
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+.league-spartan {
+    font-family: "League Spartan", sans-serif;
+}
+/* Global */
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    font-family: CooperBlack;
+    text-decoration: none;
+    font-size: 30px;
+      text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+h1 {
+    font-size: 30px;
+}
+.youtube {
+    color: #B44027;
+}
+.imdb {
+    color: #f3ce13;
+}
+a:hover{
+    scale: 110%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+/* Poster Styling */
+/* Position - Fixes */
+.ml-fix{
+    margin-left: -6px;
+}
+.ml-fix-2{
+    margin-left: -4px;
+}
+.pos-fix{
+    position: relative;
+    right: 70px;
+    top: 2px;
+}
+.m-fix-a{
+ margin-right: -2px;
+ margin-left: -6px
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+/* Elements */
+.poster{
+    background-image: url("../img/AnimalHouseNoText.jpg");
+    width: 883px;
+    height: 1250px;
+}
+.top-text-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 45px;
+}
+.top-text-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-text-line > p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+.top-text-container p{
+    margin-bottom: 0px;
+}
+.top-left-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 130px;
+    width: 365px;
+    color: #B44027;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 1px 2.5px 0px black;
+}
+.title-container{
+    height: 865px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.absolute-r{
+    position: relative;
+    font-size: 15px;
+    top: -38px;
+    right: -100px;
+    font-weight: 600;
+}
+.national-title{
+    font-size: 20px;
+    color: #999999;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black,
+    2px  2px 0 black,
+    1px 1px 0 black,
+    2px 2px 0 black,
+    3px 3px 0 black,
+    4px 4px 0 black;
+}
+.national-title-2{
+    font-size: 35px;
+    color: #999999;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black,
+    2px  2px 0 black,
+    1px 1px 0 black,
+    2px 2px 0 black,
+    3px 3px 0 black,
+    4px 4px 0 black;
+}
+.small{
+    font-size: 25px;
+}
+.small-text{
+    font-size: 10px;
+}
+.small-text-2{
+    font-size: 13px;
+}
+.rating-text{
+    width: 1px;
+    padding-left: 2px;
+    padding-right: -5px;
+}
+.rating-box-container{
+    position: relative;
+    bottom: 59px;
+    left: 625px;
+    width: fit-content;
+}
+.rated-box{
+    border: 1px solid black;
+}
+.restricted{
+    font-size: 15px;
+    font-weight: 900;
+    border-left: 1px solid black;
+    padding-left: 2px;
+}
+.credits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 800;
+    width: 100%;
+}
+.planet{
+    margin-left: 1px;
+}
+.rated-fine{
+    border-top: 1px solid black;
+    font-weight: 500;
+    font-size: 6.25px;
+}
+.rated-fine-2{
+    font-size: 6px;
+    font-weight: 600;
+}
+.rated-fine-2-secondline{
+    margin-left: 6px;
+}
+.techni{
+    position: relative;
+    font-weight: 600;
+    left: 130px;
+    top: 4px;
+    font-size: 10px;
+}
+.first-box{
+    position: relative;
+    bottom: 5px;
+    left: 275px;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 7px;
+}
+.second-box{
+    text-align: center;
+    position: relative;
+    bottom: 19px;
+    left: 457px;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 7px;
+}
+.fine-print-1{
+    font-size: 6px;
+    font-weight: 600;
+    position: relative;
+    bottom: 45px;
+    left: 40px;
+}
+.fine-print-2{
+    font-size: 6px;
+    font-weight: 600;
+    position: relative;
+    bottom: 51px;
+    left: 720px;
+}
+/* Link Styling */
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 100px;
+    margin-bottom: 50px;
+}
