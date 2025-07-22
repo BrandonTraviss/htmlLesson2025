@@ -21,10 +21,6 @@
     src: url('../font/COOPBL.TTF') format("truetype");
 }
 @font-face{
-    font-family: Chelten;
-    src: url('../font/CheltenhamStdBoldCond.otf') format("opentype");
-}
-@font-face{
     font-family: Banjoman;
     src: url('../font/Banjoman-Regular.ttf') format("truetype");
 }
